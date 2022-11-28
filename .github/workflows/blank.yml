@@ -32,7 +32,6 @@ jobs:
       - name: Fail test
         run: |
           curl https://dfgjndrgierngiergnregerg
-          choco install -y aria2 sdfewlfnweoifnwefwef
           7z --help
 
       # Runs a set of commands using the runners shell
