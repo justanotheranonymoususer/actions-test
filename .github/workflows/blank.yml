@@ -78,6 +78,7 @@ jobs:
       - name: Fail test
         shell: pwsh
         run: |
+          $ErrorActionPreference = 'stop'
           curl https://dfgjndrgierngiergnregerg
           curl https://example.com/
 
