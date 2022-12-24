@@ -40,3 +40,53 @@ jobs:
         run: |
           curl https://dfgjndrgierngiergnregerg
           curl https://example.com/
+
+  build-windows-failure-bug-bash:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Fail test
+        shell: bash
+        run: |
+          curl https://dfgjndrgierngiergnregerg
+          curl https://example.com/
+
+  build-windows-failure-bug-sh:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Fail test
+        shell: sh
+        run: |
+          curl https://dfgjndrgierngiergnregerg
+          curl https://example.com/
+
+  build-windows-failure-bug-powershell:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Fail test
+        shell: powershell
+        run: |
+          curl https://dfgjndrgierngiergnregerg
+          curl https://example.com/
+
+  build-windows-failure-bug-pwsh:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Fail test
+        shell: pwsh
+        run: |
+          curl https://dfgjndrgierngiergnregerg
+          curl https://example.com/
+
+  build-windows-failure-bug-cmd:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Fail test
+        shell: cmd
+        run: |
+          curl https://dfgjndrgierngiergnregerg
+          curl https://example.com/
